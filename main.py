@@ -15,12 +15,11 @@ banco = pd.read_csv(r'E:\JOHAN\retomando_python\redes_neuronales\bank_marketing.
 
 
 # visualizacion prematura
-import seaborn as sns
+# import seaborn as sns
 
-correlation = banco.corr()
+# correlation = banco.corr()
 
-sns.heatmap(correlation)
-
+# sns.heatmap(correlation, cmap = "RdBu", vmin = -1, center = 0)
 # =============================================================================
 # 1 - age (numeric)
 # 
@@ -90,3 +89,13 @@ for month in banco['month'].unique():
 banco.replace(dict_month, inplace = True)
 
 banco['poutcome'] = banco['poutcome'].map(lambda x: 0 if x!= 'success' else 1)
+
+# import seaborn as sns
+# correlation = banco.corr()
+# sns.heatmap(correlation, cmap = "RdBu", vmin = -1, center = 0)
+
+
+
+
+
+
